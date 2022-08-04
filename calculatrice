@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{   int A,B,C;
+    char op;
+
+    printf("cree premier nombre!\n");
+    scanf("%d",&A);
+    printf("cree deuxiem nombre!\n");
+    scanf("%d",&B);
+    printf ("donne operateur!\n");
+    scanf("\n%c",&op);
+    switch (op){
+            case '+' :C=A+B; printf("%d",C);
+             break;
+            case '*' :C=A*B; printf("%d",C);
+             break;
+            case '/' :C=A/B; printf("%d",C);
+             break;
+            case'-'  :C=A-B; printf("%d",C);
+             break;
+            default:printf("L'operation n'est pas valide");
+            break;
+        }
+    return 0;
+}
