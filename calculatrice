@@ -16,12 +16,20 @@ int main()
              break;
             case '*' :C=A*B; printf("%d",C);
              break;
-            case '/' :C=A/B; printf("%d",C);
+            case '/' :
+            if (B!=0){
+                C=A/B; printf("%d",C);
+            }
+            else{ printf("L'operation invalid");}
              break;
-            case'-'  :C=A-B; printf("%d",C);
+            case '-'  :C=A-B; printf("%d",C);
              break;
             default:printf("L'operation n'est pas valide");
             break;
         }
     return 0;
 }
+
+
+
+
